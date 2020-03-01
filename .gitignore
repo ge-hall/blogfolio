@@ -1,1 +1,2 @@
 /docker-database/Postgres/data/
+/liquibase-db-migration/liquibase.properties

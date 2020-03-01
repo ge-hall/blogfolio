@@ -1,7 +1,10 @@
 --liquibase formatted sql
 
 --changeset ge-hall:1
-create table user (
+create schema auth;
+
+--changeset ge-hall:2
+create table auth.user (
     app_metadata json,
     blocked boolean default false,
     email text,
@@ -16,5 +19,5 @@ create table user (
     username text,
     password_hash text,
     password_set_date timestamp
-    ),
+    );
     
